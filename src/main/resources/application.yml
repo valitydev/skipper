@@ -1,0 +1,21 @@
+server:
+  port: '@server.port@'
+info:
+  version: '@project.version@'
+  stage: dev
+spring:
+  application:
+    name: '@project.name@'
+  output:
+    ansi:
+      enabled: always
+
+management:
+  security:
+    flag: false
+  metrics:
+    export:
+      statsd:
+        enabled: false
+        flavor: etsy
+  endpoint.health.show-details: always
